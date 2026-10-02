@@ -56,6 +56,9 @@ jobs:
       - name: Run unit tests
         run: npm test
 
+      - name: Run Vercel adapter tests
+        run: node --test server/vercel/*.test.mjs
+
       - name: Build production bundle
         run: npm run build
 
